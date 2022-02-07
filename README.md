@@ -9,8 +9,27 @@
 ![image](https://user-images.githubusercontent.com/89105476/152719356-fba3d020-ca56-471a-a025-a5e398628863.png)
 
 ## How it works?
+#### Grid Search
 1. Generate data 
- 1.
- 2.
+2. Generate a line by generating the slope array and the y intercept array
+3. find Euclidean distance between line and all data points
+4. Add all the euclidean distance together to get score of the line
+5. Repeat all steps above until went over every number in slope array and y - intercept array
+#### Least Squares
+1. Generate data 
+2. Generate a line by generating the slope and the y intercept by using the least squares formula
+3. find Euclidean distance between line and all data points
+4. Add all the euclidean distance together to get score of the line
+- - - - 
+## Linear Regression in action:
+
+### Least Squares
+![image](https://user-images.githubusercontent.com/89105476/152720525-1580cf30-89eb-4f9d-b9f1-8eb7ec8a7c69.png)
+
+### Brute Force
+![image](https://user-images.githubusercontent.com/89105476/152720721-ec7fd821-2605-4b5d-a6d3-f63f1036cde4.png)
+
+
+
 
    
