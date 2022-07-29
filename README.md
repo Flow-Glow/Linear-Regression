@@ -31,11 +31,11 @@
 ### Brute Force
 ![image](https://user-images.githubusercontent.com/89105476/152720721-ec7fd821-2605-4b5d-a6d3-f63f1036cde4.png)
 
-###Gradient Descent and countour plot
+### Gradient Descent and countour plot
 ![image](https://i.gyazo.com/2aae17c1c8da51767eaa0a66eba78376.png)
 ![image](https://i.gyazo.com/455e15add6b502724636151152f19dff.png)
 
-###Stochastic Gradient Descent
+### Stochastic Gradient Descent
 ![image](https://i.gyazo.com/5be8321f33c07b707448b6595f3e9edb.png)
 
 - - - - 
