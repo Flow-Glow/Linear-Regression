@@ -1,12 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
+
 m_array = np.linspace(-10, 15, 100)
 b_array = np.linspace(-10, 15, 100)
 data = np.array([[1, 2], [2, 5], [3, 7]])
 m = -5
 b = -5
 eta = 0.01
-mb_ar = np.array([])
 
 def compute_grad_with_respect_to(m, b, respect=True):
     if respect:
@@ -31,7 +32,7 @@ ax2.set_xlabel('m (cm)')
 ax2.set_ylabel('b (cm)')
 ax.plot_surface(m_s, b_s, e, rstride=1, cstride=1, edgecolor='none',alpha=.7)
 
-for i in range(100):
+for i in range(500):
     respect_to_b = compute_grad_with_respect_to(m, b, respect=False)
     respect_to_m = compute_grad_with_respect_to(m, b)
 
@@ -40,14 +41,13 @@ for i in range(100):
     
     e = (m + b - 2) ** 2 + ((2 * m) + b - 5) ** 2 + ((3 * m) - 7) ** 2
 
-    #PLOT M AND B
-    # plt.scatter(m, b)
-    # plt.text(m, b, f"{i} point")
 
+    print(e,m, b, f"{i} point")
     ax.scatter(m, b, e, c='black', marker='o', s=15)
     ax.set_xlabel('m')
     ax.set_ylabel('b')
     ax.set_zlabel('E')
+print(f"Error: {e}\nM:{m}\nB:{b}")
 
 
 
